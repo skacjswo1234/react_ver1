@@ -1,0 +1,41 @@
+/* main.css */
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2; /* 배경색을 약간 어둡게 변경 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333; /* 제목 글자색을 더 어둡게 변경 */
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-item h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333; /* 게시글 제목 색상을 더 어둡게 변경 */
+  }
+  
+  .post-item p {
+    font-size: 1rem;
+    color: #444; /* 본문 글자색을 더 어둡게 변경 */
+  }
+  
