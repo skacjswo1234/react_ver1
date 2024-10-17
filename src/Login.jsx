@@ -1,38 +1,33 @@
 import { useState } from 'react';
 import './Login.css';
 
-// eslint-disable-next-line react/prop-types
 function Login({onLoginSuccess}) {
   const [loginInfo, setLoginInfo] = useState({ ID: '', password: '' });
-  
-  const handleChange = (e) => {
+
+  function handleChange(e) {
     const { name, value } = e.target;
     setLoginInfo({
       ...loginInfo,
       [name]: value
     });
-  };
+  }
 
-  const handleLogin = () => {
-    //먼저 빈값 체크시 loginInfo 정보를 꺼내왔다.
+  function handleLogin() {
+    
     const { ID, password } = loginInfo;
 
-    // 유저 이름 또는 비밀번호가 비어있을 경우 alert 표시
     if (!ID || !password) {
       alert('Please enter both username and password.');
       return;
     }
 
     if (ID === 'nhw' && password === '1234') {
-        onLoginSuccess();
+      onLoginSuccess();
     } else {
-        // 비밀번호가 틀리면 alert 표시
-        alert('Please check your ID or password.');
+      alert('Please check your ID or password.');
     }
 
-    console.log('Logging in with', loginInfo);
-    // 로그인 처리 로직 (API 연동 등)
-  };
+  }
 
 
   return (
@@ -53,7 +48,7 @@ function Login({onLoginSuccess}) {
         <label htmlFor="password">Password:</label>
         <div className="password-wrapper">
           <input
-            type="password" // showPassword 상태에 따라 input 타입 변경
+            type="password" 
             id="password"
             name="password"
             value={loginInfo.password}

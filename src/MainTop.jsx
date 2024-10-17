@@ -1,7 +1,7 @@
-
 import React from 'react';
 import './MainTop.css'; // 스타일 파일
 
+// 가상의 게시글 데이터
 const posts = [
   { id: 1, title: '1. 이것은 첫번쨰 타이틀입니다. ↓ Click', content: '남' },
   { id: 2, title: '2. 이것은 두번쨰 타이틀입니다. ↓ Click', content: '현' },
@@ -25,7 +25,7 @@ function MainTop({onPostClick}) {
     <h1>게시글 목록
     </h1>
     <ul className="post-list">
-      {postItems} {/* 미리 생성한 리스트 요소 렌더링 */}
+      {postItems} 
     </ul>
   </div>
   );
