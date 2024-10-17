@@ -21,6 +21,7 @@ function Login({onLoginSuccess}) {
       return;
     }
 
+    
     if (ID === 'nhw' && password === '1234') {
       onLoginSuccess();
     } else {
