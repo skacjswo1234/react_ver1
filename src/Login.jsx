@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './Login.css';
 
+// eslint-disable-next-line react/prop-types
 function Login({onLoginSuccess}) {
   const [loginInfo, setLoginInfo] = useState({ ID: '', password: '' });
-  const [showPassword, setShowPassword] = useState(false); // 비밀번호 보이기 상태 관리
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setLoginInfo({
