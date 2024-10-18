@@ -6,6 +6,7 @@ import './Login.css'; // App 전용 스타일
 import { useState } from 'react';
 import Detail from './Detail';
 
+
 function App() {
   const [selectedPost, setSelectedPost] = useState(null); // 선택된 게시글 저장
   const [isLogin, setLogin] = useState(false);
